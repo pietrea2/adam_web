@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<title>Adam Pietrewicz.</title>
+
+	
+
+	<style>
+    		body {background-color: black;}
+    		h1 {color: yellow;}
+		h2 {color: purple;}
+    		p {color: white;}
+		p2 {color: yellow; font-stretch: expanded;}
+
+		h1.a {
+  			font-family: "Lucida Console", Monaco, monospace;
+		}
+
+		h1.b {
+  			font-family: Arial, Helvetica, sans-serif;
+		}
+		p.a {
+  			font-family: "Trebuchet MS", Helvetica, sans-serif;
+		}
+
+		p.b {
+  			font-family: Arial, Helvetica, sans-serif;
+		}
+		p2.a {
+  			font-family: OCR A Std, monospace; font-style: oblique; 
+		}
+  	</style>
+
+</head>
+
+<body>
+
+
+	
+
+
+
+
+<nav>
+  <ul>
+    <li><a href="site_1.htm"; colour = white;>Home</strong></li>
+    <li><a href="pixels.htm">Pixel Art</a></li>
+    <li><a href="css_animation.htm">CSS Animation</a></li>
+    <li><a href="album.htm">Albums</a></li>
+    <li><a href="openGL_C.htm">C/C++ & OpenGL</a></li>
+    <li><a href="contact.htm">Contact Us</a></li>
+  </ul>
+</nav>
+
+
+
+
+
+
+
+<h1 class="a">This is a Heading, but nobody cares.</h1>
+
+<h1 class="b">ADAM PIETREWICZ</h1>
+<p class="a">This is my name. This is my website, and its still currently under construction. (If there are spelling mistakes, then i apologize, im typing very quick;ly...</p>
+<p>Now im going to try writing another line, and see if the size of the letters change.</p>
+
+
+<h2 class="a">This website will be an ongoing project this summer:</h2>
+<p>I will be trying to make this website look really cool. I'll put a lot of images of cool cars</p>
+
+
+<img src="https://i.imgur.com/8h7abIe.jpg" alt="Car interior" width="700" height="400" >
+<br>
+<br>
+<br>
+<p>And of cool animated cities, at night.  It is a very beautiful aesthetic.</p>
+<img src="city_2.gif" alt="CITY" width="700" height="400" >
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="cursor.gif" alt="welcome" width="700" height="400" >
+
+<h1 class="a">Here is the website code, just in case you want to read it.</h1>
+<p2 class="a">  ekwjhgksdgfewl,ghslkdfhgkjsdhfgkjwnergjkwheljkhgslkdfjhgkwjehglkwejhglkwdhflkgjhwerlkghwkldjsfhglkwehrglkjwehg<br>#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Hello world!\n";
+    cout << "This is Adam speaking, the code";
+    cout << " seems to work fine :) .\n";
+
+    return 0;
+}
+module HEX ( SW, HEX0);
+
+ input [9:0] SW;
+ output [6:0] HEX0;
+
+ Equation0 U0( .p1(SW[0]), .p2(SW[1]), .p3(SW[2]), .p4(SW[3]), .p5(HEX0[0]) );
+ Equation1 U1( .p1(SW[0]), .p2(SW[1]), .p3(SW[2]), .p4(SW[3]), .p5(HEX0[1]) );
+ Equation2 U2( .p1(SW[0]), .p2(SW[1]), .p3(SW[2]), .p4(SW[3]), .p5(HEX0[2]) ); 
+ Equation3 U3( .p1(SW[0]), .p2(SW[1]), .p3(SW[2]), .p4(SW[3]), .p5(HEX0[3]) );
+ Equation4 U4( .p1(SW[0]), .p2(SW[1]), .p3(SW[2]), .p4(SW[3]), .p5(HEX0[4]) );
+ Equation5 U5( .p1(SW[0]), .p2(SW[1]), .p3(SW[2]), .p4(SW[3]), .p5(HEX0[5]) );
+ Equation6 U6( .p1(SW[0]), .p2(SW[1]), .p3(SW[2]), .p4(SW[3]), .p5(HEX0[6]) );
+
+endmodule
+
+
+
+
+
+module Equation0 (input p1, p2, p3, p4, output p5);
+ assign p5 = ~(((!p1)+(!p2)+(!p3)+(!p4))&(p1+p2+(!p3)+p4)&((!p1)+!p2+p3+!p4)&(!p1+p2+!p3+!p4));
+endmodule
+
+
+module Equation1 (input p1, p2, p3, p4, output p5);
+assign p5 = ~((!p1+p2+!p3+p4)&(p1+!p2+!p3+p4)&(!p1+!p2+p3+!p4)&(p1+p2+!p3+!p4)&(p1+!p2+!p3+!p4)&(!p1+!p2+!p3+!p4));
+endmodule
+
+
+module Equation2 (input p1, p2, p3, p4, output p5);
+assign p5 = ~((p1+!p2+p3+p4)&(p1+p2+!p3+!p4)&(p1+!p2+!p3+!p4)&(!p1+!p2+!p3+!p4));
+endmodule
+
+
+module Equation3 (input p1, p2, p3, p4, output p5);
+assign p5 = ~((!p1+p2+p3+p4)&(p1+p2+!p3+p4)&(!p1+!p2+!p3+p4)&(!p1+p2+p3+!p4)&(p1+!p2+p3+!p4)&(!p1+!p2+!p3+!p4));
+endmodule
+
+
+module Equation4 (input p1, p2, p3, p4, output p5);
+assign p5 = ~((!p1+p2+p3+p4)&(!p1+!p2+p3+p4)&(p1+p2+!p3+p4)&(!p1+p2+!p3+p4)&(!p1+!p2+!p3+p4)&(!p1+p2+p3+!p4));
+endmodule
+
+
+
+module Equation5 (input p1, p2, p3, p4, output p5);
+assign p5 = ~((!p1+p2+p3+p4)&(p1+!p2+p3+p4)&(!p1+!p2+p3+p4)&(!p1+!p2+!p3+p4)&(!p1+p2+!p3+!p4));
+endmodule
+
+
+
+module Equation6 (input p1, p2, p3, p4, output p5);
+assign p5 = ~((p1+p2+p3+p4)&(!p1+p2+p3+p4)&(!p1+!p2+!p3+p4)&(p1+p2+!p3+!p4));
+endmoduleif( (back_colour_1 != 3'b111 ) | (back_colour_2 != 3'b111 )  )
+				begin 
+				
+						
+					
+				
+					if( (back_colour_1 != 3'b111 ) && (back_colour_2 != 3'b111 ) )  
+					begin 
+						
+						if(isvalid_up)
+								y <= y + 7'b0000001;	
+		
+					end
+
+	
+				   else if( back_colour_1 != 3'b111 )
+					begin
+					
+						if(isvalid_up)
+							y <= y + 7'b0000001;
+						if(isvalid_left)
+							x <= x + 8'b00000001;
+					
+					end
+					
+							
+					else if( back_colour_2 != 3'b111 )
+					begin
+					
+						if(isvalid_up)
+							y <= y + 7'b0000001;
+						if(isvalid_right)
+							x <= x - 8'b00000001;
+							
+					end	
+						
+						
+						
+				end
+				
+				
+				
+				
+				
+				
+				
+				
+	
+				
+				else if(  (back_colour_2 != 3'b111 ) | (back_colour_4 != 3'b111 )   )
+				begin 
+				
+				
+					
+						if( (back_colour_2 != 3'b111 ) && (back_colour_4 != 3'b111 ) )
+						begin
+						
+							if(isvalid_right)
+								x <= x - 8'b00000001;
+				
+						end
+							
+					
+						
+						else if( back_colour_2 != 3'b111 )
+						begin
+						
+							if(isvalid_up)
+								y <= y + 7'b0000001;
+							if(isvalid_right)
+								x <= x - 8'b00000001;
+						
+						end
+					
+						else if( back_colour_4 != 3'b111 )
+						begin
+						
+							if(isvalid_right)
+								x <= x - 8'b00000001;
+							if(isvalid_down)
+								y <= y - 7'b0000001;
+						
+						end
+				
+			
+		
+				end
+			
+				
+			
+			
+			
+			
+			
+			
+			
+			
+	
+				else if(  (back_colour_4 != 3'b111 ) | (back_colour_3 != 3'b111 )   )
+				begin 
+				
+						
+					
+						if( (back_colour_4 != 3'b111 ) && (back_colour_3 != 3'b111 ) )
+						begin
+						
+							 if(isvalid_down)
+								y <= y - 7'b0000001;
+								
+						end
+						
+						
+						else if( back_colour_4 != 3'b111 )
+						begin
+						
+							if(isvalid_right)
+								x <= x - 8'b00000001;
+							if(isvalid_down)
+								y <= y - 7'b0000001;
+						
+						end
+						
+						
+						else if(  back_colour_3 != 3'b111 )
+						begin
+						
+							if(isvalid_left)
+								y <= y + 7'b0000001;
+							if(isvalid_down)
+								y <= y - 7'b0000001;
+						
+						end
+				
+
+				
+				end
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				else if( (back_colour_1 != 3'b111 ) | (back_colour_3 != 3'b111 )  )
+				begin 
+				
+						
+						if( (back_colour_1 != 3'b111 ) && (back_colour_3 != 3'b111 ) )
+						begin
+						
+							if(isvalid_left)
+								x <= x + 8'b00000001;
+						
+						end
+						
+						
+						
+						else if( back_colour_1 != 3'b111 )
+						begin
+						
+							if(isvalid_up)
+								y <= y + 7'b0000001;
+							if(isvalid_left)
+								x <= x + 8'b00000001;
+						
+						end
+						
+						
+						else if(  back_colour_3 != 3'b111 )
+						begin
+						
+							if(isvalid_left)
+								y <= y + 7'b0000001;
+							if(isvalid_down)
+								y <= y - 7'b0000001;
+						
+						end
+						
+						
+						
+				endDepth = 786432;
+Width = 12;
+Address_radix=hex;
+Data_radix=bin;
+Content
+BEGIN
+	    0:	111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 111111111 1111# set the working dir, where all compiled verilog goes
+vlib work
+
+# compile all verilog modules in mux.v to working dir
+# could also have multiple verilog files
+vlog mux.v
+
+#load simulation using mux as the top level simulation module
+vsim mux
+
+#log all signals and add some signals to waveform window
+log {/*}
+# add wave {/*} would add all items in top level simulation module
+add wave {/*}
+
+# first test case
+#set input values using the force command, signal names need to be in {} brackets
+force {SW[0]} 0
+force {SW[1]} 0
+force {SW[2]} 0
+force {SW[3]} 0
+force {SW[4]} 0
+force {SW[5]} 0
+
+#run simulation for a few ns
+run 10ns
+
+#second test case, change input values and run for another 10ns
+# SW[0] should control LED[0]
+force {SW[0]} 1
+force {SW[1]} 1
+force {SW[2]} 1
+force {SW[3]} 1
+force {SW[4]} 1
+force {SW[5]} 1
+run 10ns
+
+
+
+
+
+
+
+
+
+
+
+
+
+# set the working dir, where all compiled verilog goes
+vlib work
+
+# compile all verilog modules in mux.v to working dir
+# could also have multiple verilog files
+vlog mux.v
+
+#load simulation using mux as the top level simulation module
+vsim mux
+
+#log all signals and add some signals to waveform window
+log {/*}
+# add wave {/*} would add all items in top level simulation module
+add wave {/*}
+
+# first test case
+#set input values using the force command, signal names need to be in {} brackets
+force {SW[0]} 0
+force {SW[1]} 0
+force {SW[2]} 0
+force {SW[3]} 0
+force {SW[4]} 0
+force {SW[5]} 0
+force {SW[6]} 0
+force {SW[7]} 0
+
+#run simulation for a few ns
+run 10ns
+
+#second test case, change input values and run for another 10ns
+# SW[0] should control LED[0]
+force {SW[0]} 0
+force {SW[1]} 1
+force {SW[2]} 0
+force {SW[3]} 1
+force {SW[4]} 0
+force {SW[5]} 1
+force {SW[6]} 0
+force {SW[7]} 1
+run 10ns
+
+# ...
+# SW[0] should control LED[0]
+force {SW[0]} 1
+force {SW[1]} 0
+force {SW[2]} 1
+force {SW[3]} 0
+force {SW[4]} 1
+force {SW[5]} 0
+force {SW[6]} 1
+force {SW[7]} 0
+run 10ns
+
+# SW[0] should control LED[0]
+force {SW[0]} 1
+force {SW[1]} 1
+force {SW[2]} 1
+force {SW[3]} 1
+force {SW[4]} 1
+force {SW[5]} 1
+force {SW[6]} 1
+force {SW[7]} 1
+run 10ns   </p2>
+<br>
+<img src="nirvana.png" alt="nothing" width="170" height="60" >
+<br><br>
+
+<img src="street.gif" alt="Car interior" width="1500" height="700" >
+<img src="inside.png" alt="Car interior" width="1300" height="700" ><img src="1.gif" alt="Car interior" width="1500" height="700" ><img src="2.gif" alt="Car interior" width="1500" height="700" ><img src="3.gif" alt="Car interior" width="1500" height="700" >
+
+<img src="4.gif" alt="Car interior" width="1500" height="700" >
+<img src="5.gif" alt="Car interior" width="1500" height="700" >
+<img src="6.gif" alt="Car interior" width="1500" height="700" >
+
+
+</body>
+</html>

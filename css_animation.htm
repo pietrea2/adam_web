@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<title>Animations</title>
+
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+	<style>
+    		//body {background-color: black;}
+    		h1 {color: yellow;}
+		h2 {color: purple;}
+    		p {color: white;}
+		p2 {color: yellow; font-stretch: expanded;}
+
+		h1.a {
+  			font-family: "Lucida Console", Monaco, monospace;
+		}
+
+		h1.b {
+  			font-family: Arial, Helvetica, sans-serif;
+		}
+		p.a {
+  			font-family: "Trebuchet MS", Helvetica, sans-serif;
+		}
+
+		p.b {
+  			font-family: Arial, Helvetica, sans-serif;
+		}
+		p2.a {
+  			font-family: OCR A Std, monospace; font-style: oblique; 
+		}
+
+div.box {
+  
+  
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  from {top: 0px;}
+  to {top: 200px; background-color: blue;}
+}
+
+
+div.pic{
+	<img src="Deftones-White-Pony.png" width="300" height="300" >
+	position: relative;
+  animation-name: go;
+  animation-duration: 3s;
+}
+
+@keyframes go{
+  from {top: 200px;}
+  to {top: 500px;}
+}
+
+
+
+
+  	</style>
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+<nav>
+  <ul>
+    <li><a href="site_1.htm"; colour = white;>Home</strong></li>
+    <li><a href="pixels.htm">Pixel Art</a></li>
+    <li><a href="css_animation.htm">CSS Animation</a></li>
+    <li><a href="album.htm">Albums</a></li>
+    <li><a href="openGL_C.htm">C/C++ & OpenGL</a></li>
+    <li><a href="contact.htm">Contact Us</a></li>
+  </ul>
+</nav>
+
+
+<h1 class="a">This will be testing the css/html animation code.</h1>
+<br><br>
+<!-- <img src="5.gif" alt="Car interior" width="800" height="500" > -->
+
+
+
+	<div class="wrapper">
+		<img src="car.png" width="200" height="120">
+
+		<div class="circle">Put mouse here</div>
+
+		<div class="square">HELLO</div>
+
+	</div>
+
+	<div class="box"></div>
+
+	<div class="pic"></div>
+
+	<img class="move" src="Deftones-white-pony.png" width="100" height="100" >
+
+	<div class="pony" width="100" height="100" ></div>	
+
+	<br><br><br><br><br><br>
+
+
+
+
+
+
+</body>
+</html>
